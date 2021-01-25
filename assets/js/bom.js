@@ -13,12 +13,44 @@ Good Luck !!!
 
 
 // Define UI Variables  here 
+const all = document.querySelectorAll(".badge");
 
-const taskInput = document.querySelector('#task'); //the task input text field
-const form = document.querySelector('#task-form'); //The form at the top
-const filter = document.querySelector('#filter'); //the task filter text field
-const taskList = document.querySelector('.collection'); //The ul
-const clearBtn = document.querySelector('.clear-tasks'); //the all task clear button
+const href = all[0];
+const protocol = all[1];
+const host = all[2];
+const port = all[3];
+const hostname = all[4];
+const pathname = all[5];
+const origin = all[6];
+
+
+const appname = all[7];
+const appversion = all[8];
+const paltfrom = all[9];
+const language = all[10];
+const cookieEnabled = all[11];
+const appCodeName = all[12];
+const product = all[13];
+const vendor = all[14];
+const onLine = all[15];
+const hardwareConcurrency = all[16];
+
+const height = all[17];
+const width = all[18];
+const pixelDepth = all[19];
+const availHeight = all[20];
+const availWidth = all[21];
+const colorDepth = all[22];
+
+const length = all[23];
+const state = all[24];
+
+// const href = document.querySelector(".badge");
+// const protocol = document.querySelector(".badge");
+// const host = document.querySelector(".badge");
+// const hostname = document.querySelector(".badge");
+
+// const appname = document.querySelector(".badge");
 
 
 
@@ -28,3 +60,47 @@ const clearBtn = document.querySelector('.clear-tasks'); //the all task clear bu
 
 
 // Display the BOM Information on the innerHTML of the elements
+href.innerHTML = location.href;
+protocol.innerHTML = location.protocol;
+host.innerHTML = location.host;
+port.innerHTML = location.port;
+hostname.innerHTML = location.hostname;
+pathname.innerHTML = location.pathname;
+origin.innerHTML = location.origin;
+
+appname.innerHTML = navigator.appName;
+appversion.innerHTML = navigator.appVersion;
+paltfrom.innerHTML = navigator.platform;
+language.innerHTML = navigator.language;
+cookieEnabled.innerHTML = navigator.cookieEnabled;
+appCodeName.innerHTML = navigator.appCodeName;
+product.innerHTML = navigator.product;
+vendor.innerHTML = navigator.vendor;
+onLine.innerHTML = navigator.onLine;
+hardwareConcurrency.innerHTML = navigator.hardwareConcurrency;
+
+height.innerHTML = screen.height;
+width.innerHTML = screen.width;
+pixelDepth.innerHTML = screen.pixelDepth;
+availHeight.innerHTML = screen.availHeight;
+availWidth.innerHTML = screen.availWidth;
+colorDepth.innerHTML = screen.colorDepth;
+
+length.innerHTML = history.length;
+state.innerHTML = history.state;
+
+
+
+
+
+
+
+
+
+// Reload Icon
+
+const rIcon = document.querySelector(".fa-retweet");
+
+rIcon.addEventListener('click', function (){
+    location.reload();
+})
