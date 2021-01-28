@@ -57,12 +57,26 @@
                 </div>
                 <div class="card-action">
                     <h5 id="task-title">List of Tasks</h5>
+                    
                     <div class="input-field col s12">
                         <input type="search" name="filter" id="filter">
                         <label for="filter">Search</label>
                     </div>
-                    <ul class="collection">
-                        <!-- Here is the task list goes  --></ul>
+                    <div class="col s12 right-align mb">
+                        <!-- Dropdown Trigger -->
+                        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Date Sort Direction</a>
+                        
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!" id="asc">Ascending</a></li>
+                            <li><a href="#!" id="dsc">Descending</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                        </ul>
+                    </div>
+                    <ul class="collection" id="ascL">
+                        <!-- Here is where the task list goes  --></ul>
+                    <ul class="collection" id="dscL">
+                        <!-- Here is where the task list goes  --></ul>
                     <a href="#" class="clear-tasks btn red">Clear All Task</a>
                 </div>
             </div>
